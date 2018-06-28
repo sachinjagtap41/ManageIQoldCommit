@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mappingWizard actions should fetch source clusters and return PENDING and FULFILLED action 1`] = `
+Array [
+  Object {
+    "type": "FETCH_V2V_SOURCE_CLUSTERS_PENDING",
+  },
+  Object {
+    "type": "FETCH_V2V_SOURCE_CLUSTERS_FULFILLED",
+  },
+]
+`;
+
+exports[`mappingWizard actions should fetch target clusters and return PENDING and FULFILLED action 1`] = `
+Array [
+  Object {
+    "type": "FETCH_V2V_TARGET_CLUSTERS_PENDING",
+  },
+  Object {
+    "type": "FETCH_V2V_TARGET_CLUSTERS_FULFILLED",
+  },
+]
+`;

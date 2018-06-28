@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mapping Wizard integration test should mount the MappingWizardClusterStep with mapStateToProps reduced 1`] = `
+Object {
+  "fetchSourceClustersAction": [Function],
+  "fetchSourceClustersUrl": "/api/dummyProviders",
+  "fetchTargetClustersAction": [Function],
+  "fetchTargetClustersUrl": "/api/dummyProviders",
+  "isFetchingSourceClusters": true,
+  "isFetchingTargetClusters": true,
+  "isRejectedSourceClusters": false,
+  "isRejectedTargetClusters": false,
+  "sourceClusters": Array [],
+  "targetClusters": Array [],
+}
+`;

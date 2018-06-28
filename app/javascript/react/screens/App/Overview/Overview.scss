@@ -1,0 +1,132 @@
+@import './screens/MappingWizard/MappingWizard.scss';
+@import './screens/PlanWizard/components/PlanWizardResultsStep/PlanWizardResultsStep.scss';
+@import 'components/InfrastructureMappingsList/InfrastructureMappingsList.scss';
+@import 'components/Migrations/Migrations.scss';
+@import 'components/ModalWizard/ModalWizard.scss';
+@import 'components/AggregateCards/AggregateCards.scss';
+@import 'components/OverviewEmptyState/OverviewEmptyState.scss';
+
+hr {
+  margin-top: 10px;
+}
+
+.full-page-empty {
+  margin-top: 100px;
+}
+
+.plans-complete-list .plans-complete-list__list-item {
+  cursor: pointer;
+}
+
+.plans-not-started-list .plans-not-started-list__list-item {
+  cursor: pointer;
+}
+
+.card-pf {
+  &.in-progress {
+    cursor: pointer;
+  }
+}
+
+.card-pf-body .blank-slate-pf {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .card-pf-body .blank-slate-pf {
+    padding: 20px 20px;
+  }
+}
+
+.csv-upload-dropzone {
+  border: 3px solid #fff;
+}
+
+.csv-upload-dropzone.active {
+  border: 3px dashed #9b9b9b; // Matches upload icon color
+}
+
+.cards-pf .blank-slate-pf {
+  border: none;
+
+  .blank-slate-pf-icon {
+    color: #d1d1d1;
+  }
+}
+
+// The below wizard styles can be moved to PF core eventually, maybe?
+
+.wizard-pf-main .blank-slate-pf {
+  padding: 30px;
+}
+
+.wizard-pf-steps .wizard-pf-steps-indicator li.is-disabled a {
+  cursor: not-allowed;
+}
+
+.wizard-pf-steps.step-buttons-disabled
+  .wizard-pf-steps-indicator
+  li.wizard-pf-step
+  a {
+  cursor: default;
+}
+
+.wizard-pf-steps.step-buttons-disabled
+  .wizard-pf-steps-indicator
+  li
+  a:hover
+  .wizard-pf-step-number {
+  background-color: #fff;
+  border-color: #bbb;
+  color: #bbb;
+}
+
+.wizard-pf-steps.step-buttons-disabled
+  .wizard-pf-steps-indicator
+  li.active
+  a:hover
+  .wizard-pf-step-number {
+  background-color: #39a5dc;
+  border-color: #39a5dc;
+  color: #fff;
+}
+
+// Patternfly 3.25 compatibility
+.wizard-pf-main {
+  margin-left: initial;
+}
+
+// The below style could be moved to core for the ConfirmModal component (or first, to the CSS in patternfly-react for that)
+
+.confirm-warning-icon {
+  font-size: 3em;
+}
+
+// The below styles are for a modal-inside-a-modal, and will be necessary wherever we have that.
+
+.inner-modal-backdrop {
+  z-index: 1060; // .modal-dialog defaults to z-index: 1050
+}
+
+.inner-modal-dialog {
+  z-index: 1070;
+  margin-top: 150px;
+}
+
+.heading-with-link-container {
+  overflow: auto;
+  margin-top: 20px;
+  .pull-left {
+    width: 80%;
+  }
+  .pull-right {
+    width: 20%;
+    text-align: right;
+  }
+  h3 {
+    margin-top: 0px;
+  }
+}
+.delete-infra-mapping-icon-disabled {
+  color: rgba(12, 22, 45, 0.5);
+}

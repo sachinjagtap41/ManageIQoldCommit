@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Plan Wizard integration test should mount the PlanWizard with mapStateToProps reduced 1`] = `
+Object {
+  "hidePlanWizard": false,
+  "hidePlanWizardAction": [Function],
+  "planWizardExitedAction": [Function],
+  "planWizardGeneralStep": Object {},
+  "planWizardOptionsStep": Object {},
+  "planWizardVMStep": Object {},
+  "resetVmStepAction": [Function],
+  "setMigrationsFilterAction": [Function],
+  "setPlanScheduleAction": [Function],
+  "setPlansBodyAction": [Function],
+}
+`;

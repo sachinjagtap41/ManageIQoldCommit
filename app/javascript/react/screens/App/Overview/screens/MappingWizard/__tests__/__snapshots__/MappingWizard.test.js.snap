@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MappingWizard component renders the mapping wizard 1`] = `
+<Wizard
+  className=""
+  dialogClassName=""
+  onClose={[Function]}
+  onExited={[MockFunction]}
+  show={true}
+>
+  <WizardHeader
+    onClose={[Function]}
+    title="Infrastructure Mapping Wizard"
+  />
+  <WizardBody
+    className=""
+  >
+    <MappingWizardBody
+      activeStep="1"
+      activeStepIndex={0}
+      disableNextStep={false}
+      goToStep={[Function]}
+      hideAlertAction={[Function]}
+      loaded={true}
+      mappingWizardClustersStep={Object {}}
+      mappingWizardDatastoresStep={Object {}}
+      mappingWizardGeneralStep={Object {}}
+      mappingWizardNetworksStep={Object {}}
+      transformationsBody={Object {}}
+    />
+  </WizardBody>
+  <WizardFooter
+    className=""
+  >
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      className="btn-cancel"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Cancel
+    </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="default"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <Icon
+        name="angle-left"
+        type="fa"
+      />
+      Back
+    </Button>
+    <Button
+      active={false}
+      block={false}
+      bsClass="btn"
+      bsStyle="primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Next
+      <Icon
+        name="angle-right"
+        type="fa"
+      />
+    </Button>
+  </WizardFooter>
+  <WarningModal
+    activeStepIndex={0}
+    nextStep={[Function]}
+    onFinalStep={false}
+  />
+</Wizard>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetchTransformationPlansAction dispatches PENDING and FULFILLED actions 1`] = `
+Array [
+  Object {
+    "type": "FETCH_V2V_TRANSFORMATION_PLANS_PENDING",
+  },
+  Object {
+    "type": "FETCH_V2V_TRANSFORMATION_PLANS_FULFILLED",
+  },
+]
+`;
